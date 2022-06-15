@@ -5,24 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article preview component | Frontend Mentor</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/app.js"></script>
 </head>
 <body>
-    Shift the overall look and feel by adding these wonderful 
-    touches to furniture in your home
-  
-    Ever been in a room and felt like something was missing? Perhaps 
-    it felt slightly bare and uninviting. I’ve got some simple tips 
-    to help you make any room feel complete.
-  
-    Michelle Appleton
-    28 Jun 2020
-  
-    Share
-    
-    <div class="attribution">
+    <main>
+        <h1 class="hidden">Article preview</h1>
+        <img class="header" src="./src/images/drawers.jpg" alt="Green drawers">
+        <div class="text">
+            <p class="pitch">
+                Shift the overall look and feel by adding these wonderful 
+                touches to furniture in your home
+            </p>
+            <p class="summary"> 
+                Ever been in a room and felt like something was missing? Perhaps 
+                it felt slightly bare and uninviting. I’ve got some simple tips 
+                to help you make any room feel complete.
+            </p>    
+        </div>
+        <div class="footer">
+            <div class="info-section"> <!--default state-->
+                <img src="./src/images/avatar-michelle.jpg" alt="Michelle">
+                <div class="name-date">
+                    <p>Michelle Appleton</p>
+                    <p>28 Jun 2020</p>
+                </div>
+            </div>
+            <button id="share-btn"><img src="./src/images/icon-share.svg" alt="Share"></button>
+            <div class="share-section"> <!--share state-->
+                <p>Share</p>
+                <a><img src="./src/images/icon-facebook.svg" alt="Facebook"></a>
+                <a><img src="./src/images/icon-twitter.svg" alt="Twitter"></a>
+                <a><img src="./src/images/icon-pinterest.svg" alt="Pinterest"></a>
+            </div>
+        </div>
+    </main>
+    <footer class="hidden">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/Ax-cd">Ax-cd</a>.
-    </div>
-  
+    </footer>
 </body>
 </html>
