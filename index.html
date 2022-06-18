@@ -11,7 +11,7 @@
 <body>
     <main>
         <h1 class="hidden">Article preview</h1>
-        <img class="header" src="./src/images/drawers.jpg" alt="Green drawers">
+        <img class="header-img" src="./src/images/drawers.jpg" alt="Green drawers">
         <div class="text">
             <p class="pitch">
                 Shift the overall look and feel by adding these wonderful 
@@ -23,21 +23,23 @@
                 to help you make any room feel complete.
             </p>    
         </div>
-        <div class="footer">
-            <div class="info-section"> <!--default state-->
-                <img src="./src/images/avatar-michelle.jpg" alt="Michelle">
-                <div class="name-date">
-                    <p>Michelle Appleton</p>
-                    <p>28 Jun 2020</p>
-                </div>
+
+        <!--default state-->
+        <div class="info-section">
+            <img src="./src/images/avatar-michelle.jpg" alt="Michelle">
+            <div class="name-date">
+                <p class="name">Michelle Appleton</p>
+                <p class="date">28 Jun 2020</p>
             </div>
-            <button id="share-btn"><img src="./src/images/icon-share.svg" alt="Share"></button>
-            <div class="share-section"> <!--share state-->
-                <p>Share</p>
-                <a><img src="./src/images/icon-facebook.svg" alt="Facebook"></a>
-                <a><img src="./src/images/icon-twitter.svg" alt="Twitter"></a>
-                <a><img src="./src/images/icon-pinterest.svg" alt="Pinterest"></a>
-            </div>
+            <button class="share-btn"><img src="./src/images/icon-share.svg" alt="Share"></button>
+        </div>
+        <!--share state-->
+        <div class="share-section toggle-display"> 
+            <p>Share</p>
+            <a class="social-link"><img src="./src/images/icon-facebook.svg" alt="Facebook"></a>
+            <a class="social-link"><img src="./src/images/icon-twitter.svg" alt="Twitter"></a>
+            <a class="social-link"><img src="./src/images/icon-pinterest.svg" alt="Pinterest"></a>
+            <button class="return-btn"><img src="./src/images/icon-share.svg" alt="Return"></button>
         </div>
     </main>
     <footer class="hidden">
