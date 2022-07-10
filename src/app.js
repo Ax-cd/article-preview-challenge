@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showShare() {
     shareBtn.addEventListener("click", function (e) {
       sharing.classList.toggle("toggle-display");
+      shareBtn.classList.toggle("inverted-btn");
     });
   }
   showShare();
