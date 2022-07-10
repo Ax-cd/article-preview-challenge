@@ -67,24 +67,21 @@ body {
     color: var(--desat-blue);
 }
 
-.share-btn, .return-btn {
+.share-btn {
     border: none;
+    fill: var(--dark-blue);
     padding: .5rem;
+    margin-left: 3.5rem;
     border-radius: 50%;
     cursor: pointer;
-}
-.share-btn {
-    background-color: var(--light-blue);
-    margin-left: 3.5rem;
     z-index: 1;
 }
-.inverted-btn { /*fix arrow color*/
-    filter: invert(48%) sepia(4%) saturate(2648%) hue-rotate(175deg) brightness(100%) contrast(86%);
-    margin-left: 3rem;
-}
-
 .toggle-display {
     visibility: hidden;
+}
+.inverted-btn {
+    fill: hsl(0, 0%, 100%);
+    background-color: var(--desat-blue);
 }
 
 .share-section { 
